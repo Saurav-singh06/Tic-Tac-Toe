@@ -55,6 +55,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             Player = true
             TurnCount = 0
             initializeBoardStatus()
+            txtPlayer.text="____"
         }
     }
 
@@ -124,7 +125,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     private fun checkWinner() {
     // Horizontal Rows
         for (i in 0..2){
-            if (boardStatus[i][0] == boardStatus[i][1] && boardStatus[i][0] == boardStatus[1][2]){
+            if (boardStatus[i][0] == boardStatus[i][1] && boardStatus[i][0] == boardStatus[i][2]){
                 if (boardStatus[i][0]==1){
                     updateDisplay("Player X Winner")
                     break
@@ -132,6 +133,41 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                     updateDisplay("Player O winner")
                     break
                 }
+            }
+        }
+
+        // Vertical Column
+        for (i in 0..2){
+            if (boardStatus[0][i] == boardStatus[1][i] && boardStatus[0][i] == boardStatus[2][i]){
+                if (boardStatus[0][i]==1){
+                    updateDisplay("Player X Winner")
+                    break
+                }else if (boardStatus[0][i]==0){
+                    updateDisplay("Player O winner")
+                    break
+                }
+            }
+        }
+
+        // First Diagonal
+        if (boardStatus[0][0] == boardStatus[1][1] && boardStatus[0][0] == boardStatus[2][2]){
+            if (boardStatus[0][0]==1){
+                updateDisplay("Player X Winner")
+
+            }else if (boardStatus[0][0]==0){
+                updateDisplay("Player O winner")
+
+            }
+        }
+
+        // Second Diagonal
+        if (boardStatus[0][2] == boardStatus[1][1] && boardStatus[0][2] == boardStatus[2][0]){
+            if (boardStatus[0][2]==1){
+                updateDisplay("Player X Winner")
+
+            }else if (boardStatus[0][2]==0){
+                updateDisplay("Player O winner")
+
             }
         }
     }
