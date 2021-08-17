@@ -26,10 +26,11 @@
         android:fontFamily="serif-monospace"
         />
     <TextView
+        android:id="@+id/txtPlayer"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="10"
-        android:text="Player x turn"
+        android:text="Player X turn"
         android:gravity="center"
         android:textSize="20sp"
         android:textColor="@color/white"
@@ -61,9 +62,11 @@
                 android:weightSum="99">
 
                 <Button
+                    android:id="@+id/btn1"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="32"
+                    android:textSize="50dp"
                     android:backgroundTint="@color/white"/>
 
                 <View
@@ -73,9 +76,11 @@
                     android:background="@color/grey"/>
 
                 <Button
+                    android:id="@+id/btn2"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="32"
+                    android:textSize="50dp"
                     android:backgroundTint="@color/white"/>
 
                 <View
@@ -85,9 +90,11 @@
                     android:background="@color/grey"/>
 
                 <Button
+                    android:id="@+id/btn3"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="32"
+                    android:textSize="50dp"
                     android:backgroundTint="@color/white"/>
 
 
@@ -107,9 +114,12 @@
                 android:weightSum="99">
 
                 <Button
+                    android:id="@+id/btn4"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="32"
+
+                    android:textSize="50dp"
                     android:backgroundTint="@color/white"/>
 
                 <View
@@ -119,9 +129,11 @@
                     android:background="@color/grey"/>
 
                 <Button
+                    android:id="@+id/btn5"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="32"
+                    android:textSize="50dp"
                     android:backgroundTint="@color/white"/>
 
                 <View
@@ -131,9 +143,11 @@
                     android:background="@color/grey"/>
 
                 <Button
+                    android:id="@+id/btn6"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="32"
+                    android:textSize="50dp"
                     android:backgroundTint="@color/white"/>
 
 
@@ -153,9 +167,11 @@
                 android:weightSum="99">
 
                 <Button
+                    android:id="@+id/btn7"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="32"
+                    android:textSize="50dp"
                     android:backgroundTint="@color/white"/>
 
                 <View
@@ -165,9 +181,11 @@
                     android:background="@color/grey"/>
 
                 <Button
+                    android:id="@+id/btn8"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="32"
+                    android:textSize="50dp"
                     android:backgroundTint="@color/white"/>
 
                 <View
@@ -177,9 +195,11 @@
                     android:background="@color/grey"/>
 
                 <Button
+                    android:id="@+id/btn9"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="32"
+                    android:textSize="50dp"
                     android:backgroundTint="@color/white"/>
 
 
